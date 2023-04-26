@@ -1,4 +1,0 @@
-repository "TheOracle@MagicDadJokes@cloud"
-  path "/"
-    br "/main"
-    co "/main"
