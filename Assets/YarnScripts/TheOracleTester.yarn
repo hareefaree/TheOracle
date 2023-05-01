@@ -1,0 +1,30 @@
+﻿title: TheOracleTester
+tags:
+position: 0,0
+---
+<<Princess>>
+Hello World
+<<Oracle>>
+->Hello world
+    <<jump Node1>>
+->Is this working
+    <<jump Node2>>
+===
+title: Node2
+position: -112,222
+---
+<<Princess>>
+You are at Node2
+<<Oracle>>
+->Test Again?
+    <<jump TheOracleTester>>
+===
+title: Node1
+position: 94,223
+---
+<<Princess>>
+You are at Node1
+<<Oracle>>
+->Test Again?
+    <<jump TheOracleTester>>
+===
