@@ -1,0 +1,62 @@
+﻿title: TheOracleBeta
+tags:
+---
+<<Narrator>>
+You are the royal oracle, your charge is to portend the rule and whims of the royals at their leisure.
+ <<Narrator>>
+You've been locked in the back of the castle behind kitschy curtains and a dazzlingly useless crystal ball.
+<<Narrator>>
+They do not understand you, nor do they wish to. All they know is anything you say will one day come true.
+<<Narrator>>
+Your tools, your deck of ancient tarot cards, sit under your right hand. 
+<<Narrator>>
+You hum, feeling the attunement of history flow through you.
+<<Narrator>>
+You shuffle them. the princess sits in front of you, chewing her bottom lip.
+<<Narrator>>
+Her Royal Highness has come to you for something. Advice? No, more likely something else. She hasn't asked you a question yet.
+<<Narrator>>
+She looks over her shoulders, remembers the guards posted at the entrance (they're not allowed in, readings are private).
+<<Narrator>>
+Her eyes meet yours. 
+<<Princess>>
+"I need to know if there's a possibility that I will rule."
+<<Narrator>>
+You pause. You'll need more information first.
+->Look at her Head
+    <<jump HeadStart>>
+->Look at her Hands
+    <<jump HandStart>>
+===
+title: HeadStart
+position: 152,155
+---
+<<Narrator>>
+You take a moment to study her face.
+<<Princess>>
+"Well?"
+<<Narrator>>
+She cocks her head, her eyes narrowing at you. 
+Her lips are thin and firm and her eyes are bright, inquisitive and cautious all at once. 
+She is considering you as you watch her - analyzing, pulling you apart as you reconstitute her.
+She has her father's chin - strong, set. She and her brother both take after him, but his broad shoulders read as more kingly. 
+She's mousier, big glasses drifting slowly down the slope of her nose. 
+->Consider Her Closer
+    She's been spending more and more time in the libraries as she's gotten older - or so you've heard. 
+    You don't know for what - could be anything from the sciences to fantasies of political intriugue. 
+    You know from the other advisors that this isn't the first time she's been asking about possible succession, even though she's only second in line. 
+    You also know that by asking you, she's gambling - she wants to set her fate in stone.
+    She looks...
+    -> gentle, thoughtful... like she's seeking counsel.
+    
+    -> willfull, determined. A wild horse.
+
+    -> stubborn. You resist the urge to snort at her.
+
+===
+title: HandStart
+
+position: -104,159
+---
+
+===

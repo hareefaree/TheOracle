@@ -19,7 +19,7 @@ public class DialogueController_V : DialogueViewBase
 
     //character names
     //Serialize Field for Color of each speaker's name,
-    [SerializeField] Color princessColor, oracleColor;
+    [SerializeField] Color princessColor, oracleColor, narratorColor;
     Color currentSpeakerColor;
     string currentSpeakerName;
 
@@ -36,11 +36,13 @@ public class DialogueController_V : DialogueViewBase
     {
         runner = GetComponent<DialogueRunner>();
         //create all commands in awake.
-        //- Set the speaker's name for each message
+        //- Set the speaker's name for each message - DONE
         //- make text flashy
         //- Prompt the card draws, which pauses the dialogue and sets the cards that have been chosen\
         runner.AddCommandHandler("Princess", SetSenderPrincess);
         runner.AddCommandHandler("Oracle", SetSenderOracle);
+        runner.AddCommandHandler("Narrator", SetSenderNarrator);
+        //runner.AddCommandHandler("TriggerCardView", TriggerCardView);
 
         optionsContainer.SetActive(false);
     }
@@ -159,16 +161,25 @@ public class DialogueController_V : DialogueViewBase
     public void SetSenderPrincess()
     {
         currentSpeakerColor = princessColor;
-        currentSpeakerName = "Princess";
+        currentSpeakerName = "Princess - ";
     }
 
     public void SetSenderOracle()
     {
         currentSpeakerColor = oracleColor;
-        currentSpeakerName = "Oracle";
+        currentSpeakerName = "Oracle - ";
+    }
+    public void SetSenderNarrator()
+    {
+        currentSpeakerColor = narratorColor;
+        currentSpeakerName = "YOU - ";
     }
 
     //SET PROMPTS HERE
-
+    public void TriggerCardView()
+    {
+        //trigger the drag and drop screen here!
+        Debug.Log("Triggering Card View");
+    }
 }
 

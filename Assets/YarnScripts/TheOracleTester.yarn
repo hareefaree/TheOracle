@@ -4,10 +4,28 @@ position: 0,0
 ---
 <<Princess>>
 Hello World
+<<Princess>>
+KUNG
+<<Princess>>
+PAO
+<<Princess>>
+P
+<<Princess>>
+P
+<<Princess>>
+P
+<<Princess>>
+P
+<<Princess>>
+P
+<<Princess>>
+P
 <<Oracle>>
-->Hello world
+->stinky
+    stinky.
     <<jump Node1>>
-->Is this working
+->Is this working?
+    Is this working?
     <<jump Node2>>
 ===
 title: Node2
@@ -17,6 +35,7 @@ position: -112,222
 You are at Node2
 <<Oracle>>
 ->Test Again?
+    Test Again?
     <<jump TheOracleTester>>
 ===
 title: Node1
@@ -26,5 +45,6 @@ position: 94,223
 You are at Node1
 <<Oracle>>
 ->Test Again?
+    Test Again?
     <<jump TheOracleTester>>
 ===

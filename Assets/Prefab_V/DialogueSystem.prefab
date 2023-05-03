@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 4941949226483387588}
   - component: {fileID: 4941949226483387450}
   - component: {fileID: 4941949226483387589}
-  - component: {fileID: 4941949226483387451}
+  - component: {fileID: 9018528884890241773}
   m_Layer: 5
   m_Name: OptionBox
   m_TagString: Untagged
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4941949226483387451
+--- !u!114 &9018528884890241773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1107,7 +1107,7 @@ MonoBehaviour:
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -1282,7 +1282,7 @@ MonoBehaviour:
   m_Content: {fileID: 4941949225295076630}
   m_Horizontal: 0
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -1667,12 +1667,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af50735a2c76e4b9ba89e084d62408b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageModulePrefab: {fileID: 0}
-  messageText: {fileID: 0}
-  characterNameText: {fileID: 0}
+  messageModulePrefab: {fileID: 4941949225193402730}
+  messageText: {fileID: 4941949226342637823}
+  characterNameText: {fileID: 4941949225544424402}
   lettersPerSecond: 10
-  optionsContainer: {fileID: 0}
-  optionPrefab: {fileID: 0}
+  princessColor: {r: 0.24134386, g: 0.110137075, b: 0.31132078, a: 1}
+  oracleColor: {r: 0.09019607, g: 0.160784, b: 0.28235295, a: 1}
+  optionsContainer: {fileID: 4941949226483387591}
+  optionPrefab: {fileID: 4941949225535100147}
 --- !u!1001 &4690158026350425528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1770,6 +1772,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b2e799d9c1b142078ae9e53cc9d4f62, type: 3}
+--- !u!114 &4941949225535100147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 397334103413301579, guid: 6b2e799d9c1b142078ae9e53cc9d4f62, type: 3}
+  m_PrefabInstance: {fileID: 4690158026350425528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2a56d6679de44298207eec0bbcf044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &4941949225535100156 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 397334103413301572, guid: 6b2e799d9c1b142078ae9e53cc9d4f62, type: 3}
