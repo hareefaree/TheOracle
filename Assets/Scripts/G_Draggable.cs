@@ -11,7 +11,6 @@ public class G_Draggable : MonoBehaviour
     private bool IsDragged = false;
     private Vector3 mouseDragStartPosition;
     private Vector3 spriteDragStartPosiion;
-
     private void OnMouseDown()
     {
         IsDragged = true;
@@ -30,5 +29,9 @@ public class G_Draggable : MonoBehaviour
     {
         IsDragged = false;
         dragEndedCallback(this);
+      
     }
+
+   
+   
 }
