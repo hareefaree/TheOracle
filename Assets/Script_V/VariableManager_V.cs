@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class VariableManager_V : MonoBehaviour
 {
-    string headCardOption1;
-    string headCardOption2;
-    string headCardFinal;
+    public string headCardOption1;
+    public string headCardOption2;
+    public string headCardFinal;
 
-    string handCardOption1;
-    string handCardOption2;
-    string handCardFinal;
+    public string handCardOption1;
+    public string handCardOption2;
+    public string handCardFinal;
 
-    bool lookedAtHand;
-    bool lookedAtHead;
+    public bool lookedAtHand;
+    public bool lookedAtHead;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +24,5 @@ public class VariableManager_V : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

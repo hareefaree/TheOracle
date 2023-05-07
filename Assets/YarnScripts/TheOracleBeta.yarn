@@ -1,5 +1,6 @@
 ﻿title: TheOracleBeta
 tags:
+position: 0,0
 ---
 <<Narrator>>
 You are the royal oracle, your charge is to portend the rule and whims of the royals at their leisure.
@@ -31,32 +32,532 @@ You pause. You'll need more information first.
 title: HeadStart
 position: 152,155
 ---
+<<set $lookedAtHead to true>>
 <<Narrator>>
 You take a moment to study her face.
 <<Princess>>
 "Well?"
 <<Narrator>>
 She cocks her head, her eyes narrowing at you. 
+<<Narrator>>
 Her lips are thin and firm and her eyes are bright, inquisitive and cautious all at once. 
+<<Narrator>>
 She is considering you as you watch her - analyzing, pulling you apart as you reconstitute her.
+<<Narrator>>
 She has her father's chin - strong, set. She and her brother both take after him, but his broad shoulders read as more kingly. 
+<<Narrator>>
 She's mousier, big glasses drifting slowly down the slope of her nose. 
 ->Consider Her Closer
+    <<Narrator>>
     She's been spending more and more time in the libraries as she's gotten older - or so you've heard. 
+    <<Narrator>>
     You don't know for what - could be anything from the sciences to fantasies of political intriugue. 
+    <<Narrator>>
     You know from the other advisors that this isn't the first time she's been asking about possible succession, even though she's only second in line. 
+    <<Narrator>>
     You also know that by asking you, she's gambling - she wants to set her fate in stone.
+    <<Narrator>>
     She looks...
-    -> gentle, thoughtful... like she's seeking counsel.
-    
-    -> willfull, determined. A wild horse.
-
-    -> stubborn. You resist the urge to snort at her.
+    -> gentle, thoughtful...
+        <<set $headCardOption1 to "Heirophant">>
+        //options will have fool, tower & hanged man
+        gentle, thoughtful... like she's seeking counsel.
+        <<Narrator>>
+        You draw a card - a {$headCardOption1} card sits in your hand. 
+        <<Narrator>>
+        The princess cocks her head inquisitively at you. You get the feeling she wants to know what you drew.
+        <<Narrator>>
+        You can't tell her, of course. It disrupts your process.
+        <<Narrator>>
+        She won't do anything, won't ask. Her curiosity hasn't outdone her patience yet.
+        <<Narrator>>
+        You recall a story your peer once told you.
+        <<Narrator>>
+        She had her nose in a book, something of forumulas and mechanisms.
+        <<Narrator>>
+        Her father, once known for his wild and flowing hair, was finding himself in front of the mirror more and more often,
+        <<Narrator>>
+        pressing sad fingers into the point where is hairline used to be.
+        <<Narrator>>
+        She wanted to make him something, something to help him.
+        <<Narrator>>
+        So she inquired with the palace scientists, functionally apprenticing under the Royal Cosmetologian
+        <<Narrator>>
+        And she made it!
+        <<Narrator>>
+        He doesn't use it, though, opting to lose his hair with grace
+        <<Narrator>>
+        In part because having to shave his forehead proved far too inconvenient for him.
+        <<Narrator>>
+        You remember thinking she was...
+        -> a sweet heart
+            <<set $headCardOption2 to "Fool">>
+            A sweet heart. Only a tender child would learn the art of alchemy for something as nothing as her father's hairline.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+        ->Impressive...
+            <<set $headCardOption2 to "Tower">>
+            Impressive, but in a way that scared you. 
+            <<Narrator>>
+            How long would it be before she turned that energy to weaponry, poisons, or poxes?
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$headCardOption1} card and a {$headCardOption2}.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+        -> ... dedicated.
+            <<set $headCardOption2 to "Hanged_Man">>
+            dedicated, a trait you admire.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+    -> willfull, determined...
+        <<set $headCardOption1 to "Magician">>
+        //options will have sun, tower & hierophant
+        willfull, determined. A wild horse.
+        <<Narrator>>
+        You draw a card - a {$headCardOption1} card sits in your hand.
+        <<Narrator>>
+        An interesting card you-
+        <<Princess>>
+        "You drew something? What'd you draw?"
+        <<Narrator>>
+        She leans forward, trying to peak over the table. Her eyes are bright.
+        <<Narrator>>
+        You shake your head.
+        <<Oracle>>
+        "Patience, Your Royal Highness. All part of the process"
+        <<Narrator>>
+        You recall a story your peer once told you.
+        <<Narrator>>
+        Her brother had spent most of his time taunting her when they were young
+        <<Narrator>>
+        Telling her she would never become queen - she didn't know to fight.
+        <<Narrator>>
+        It made her angry - enough to pick up a sword, cut off her hair, and beg a guardsmen to train her.
+        <<Narrator>>
+        She wanted to duel her brother - and that she did.
+        <<Narrator>>
+        She became a mystery trainee who pointed her dummy sword at him and said she wanted to fight him.
+        <<Narrator>>
+        Concealing her face, she lowered her voice and said that if she one, he could take off her helment.
+        <<Narrator>>
+        His curiousity got the better of him.
+        <<Narrator>>
+        He won.
+        <<Narrator>>
+        He laughed at her tenacity, but never questioned her ability to fight again - 
+        <<Narrator>>
+        his breath was ragged and his motions desperate by the time she was on the ground.
+        <<Narrator>>
+        It made you think...
+            ->She fit right in//sun
+                <<set $headCardOption2 to "Sun">>
+                <<Narrator>>
+                She fit right in with the trainee boys. Young, bright, shoulders back. 
+                <<Narrator>>
+                She was 10 times smarter than them without a sword in her hands...
+                <<Narrator>>
+                With it? She could lead them smiling to victory.
+                <<Narrator>>
+                You draw a card
+                <<Narrator>>
+                In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+            ->She needed more training//hierophant
+                <<set $headCardOption2 to "Hierophant">>
+                <<Narrator>>
+                She needed more training. Maybe a week or two. 
+                <<Narrator>>
+                And she could have beat him.
+                <<Narrator>>
+                He'd only been training for a few weeks himself.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+            ->She could become a danger.//tower
+                <<set $headCardOption2 to "Tower">>
+                <<Narrator>>
+                She could become a danger, a death mark
+                <<Narrator>>
+                Her mind carried her through half the match...
+                <<Narrator>>
+                with a sharpened sword in her hand? 
+                <<Narrator>>
+                Her brother would have lost his life.
+                <<Narrator>>
+                You draw a card
+                <<Narrator>>
+                In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+    -> stubborn...
+        <<set $headCardOption1 to "Hanged_Man">>
+        stubborn. You resist the urge to snort at her.
+        <<Narrator>>
+        You draw a card.
+        <<Princess>>
+        "What is it?"
+        <<Narrator>>
+        "Patience, your Highness."
+        <<Princess>>
+        "Oh come on, what is it? I saw you draw something, and I wanna see it."
+        <<Narrator>>
+        You give her a look. She crosses her arms and sits back in her chair.
+        <<Narrator>>
+        You check your hand. A {$headCardOption1}.
+        <<Narrator>>
+        You recall a story your peer once told you.
+        <<Narrator>>
+        The princess had runaway once, tired of the expectations and restrictions that came with being a princess.
+        <<Narrator>>
+        She didn't have friends to smuggle her out, like her brother did every other night. 
+        <<Narrator>>
+        So she hid in a crate that was used to toss out the palace waste, a hankerchief covering her mouth to block the smell
+        <<Narrator>>
+        She was found 8 days later, a day after her brother called for a search (their father was away on business)
+        <<Narrator>>
+        She had to be dragged back from the village she had found and had just begun to call home.
+        <<Narrator>>
+        You remember thinking she was...
+        -> simply a child.
+            <<set $headCardOption2 to "Fool">>
+            <<Narrator>>
+            simply a child, doing what children do.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+        -> A fox.
+            <<set $headCardOption2 to "Magician">>
+            <<Narrator>>
+            A fox, something wily.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
+        -> a bee chasing honey.
+            <<set $headCardOption2 to "Sun">>
+            <<Narrator>>
+            A bee chasing honey - you don't know if she sought freedom or attention.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$headCardOption1} and a {$headCardOption2} card.
+                ->Pick a Card
+                    <<jump HeadCardPick>>
 
 ===
 title: HandStart
 
 position: -104,159
 ---
+<<set $lookedAtHand to true>>
+<<Princess>>
+"Did I ask right?"
+<<Princess>>
+"I thought that I just ask you a question and you tell me what'll happen?"
+<<Narrator>>
+She looks down at you in the hands on the table.
+<<Narrator>>
+They're fidgeting, she's pulling a hangnail from her fingers.
+<<Narrator>>
+She probably hasn't been to the royal groomers in a while.
+<<Narrator>>
+Her fingers are firm, dextrous.
+<<Narrator>>
+Her middle finger has the thin red line of a papercut on it.
+<<Narrator>>
+There's a pale, splotch on her wrist that she scratches ocassionally - chemical burn?
+->Consider her Closer
+<<Narrator>>
+She has only beaten her brother in combat once,
+<<Narrator>>
+a dumb-luck moment in a fight where she maneuvered a sandbag open and splashed dust into his face. 
+<<Narrator>>
+She has made him cry in other ways -
+<<Narrator>>
+she once spend a week days building a rudimentary automatonical mini-dragon
+<<Narrator>>
+- which he destroyed when she hid it in his bed to scare him.
+<<Narrator>>
+He wailed and wailed before reaching for his sword and smashing it with the hilt.
+<<Narrator>>
+Later, she received an accolade from their hard-to-impress philosopher tutor,
+<<Narrator>>
+one her brother had bent over backwards to get in the good graces of.
+<<Narrator>>
+It embarassed him.
+<<Narrator>>
+And everytime she lost a fight, 
+<<Narrator>>
+no matter how battered she got, 
+<<Narrator>>
+she would simply look at him
+<<Narrator>>
+and smile serenely. 
+<<Narrator>>
+That scared him... he cried everytime 
+<<Narrator>>
+Through more quietly as he got older.
+She looks...
+->patient...
+    <<set $handCardOption1 to "Temperance">>//world death emperor
+    patient... moderated. She's telling herself to calm down.
+    <<Narrator>>
+    You draw a card from your deck. A {$handCardOption1} sits in your hand.
+    You cock your head at her.
+    <<Oracle>>
+    "You seem anxious."
+    <<Narrator>>
+    She looks up at you, eyes wide.
+    <<Oracle>>
+    "Regardless, Your Highness, this doesn't indicate how your journey will go."
+    "It's a balm, a predictor. Not a guide"
+    "You know your own heart, my dear, let it guide you."
+    <<Narrator>>
+    The Princess nods, then looks back down. She's smiling a little
+    Her shoulders relax
+    You've done something kind for her.
+    You...
+        -> smile...//world
+            <<set $handCardOption2 to "World">>
+            You smile fondly across the table.
+            She isn't anything cruel. 
+            If anything, her future seems bright to you.
+            You draw a card
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+        -> bite your lip...//death
+            <<set $handCardOption2 to "Death">>
+            You bite your lip. That isn't to say her road will be easy. 
+            You draw another card.
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+        -> cock your head...//emperor
+            <<set $handCardOption2 to "Emperor">>
+            You worry a little, what her rule might mean
+            Her brother is unoffensive but uninspiring.
+            Her authority glows.
+            She could lead the nation off a cliff, and you wouldn't quite complain.
+            You draw another card
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+-> self-reflective...//devil temperance world
+    <<set $handCardOption1 to "Hermit">>
+    self-reflective... withdrawn
+    <<Narrator>>
+    You draw a card from your deck. A {$handCardOption1} sits in your hand.
+    <<Narrator>>
+    You're curious.
+    <<Oracle>>
+    "What do you want to hear?"
+    <<Narrator>>
+    You shuffle the remaining cards.
+    <<Oracle>>
+    "To become queen?"
+    <<Narrator>>
+    She  sighs, turning her head away.
+    <<Princess>>
+    "I'm not sure."
+    <<Princess>>
+    "It means something happens to my dad and my brother, right?"
+    <<Narrator>>
+    You nod. She looks a little sad.
+    <<Princess>>
+    "But... they could be doing better by this nation. 
+    "I've been reading on statecraft, and tried quizzing them or talking to them about ideas"
+    "They don't listen. All they care about is what our grandfathers did."
+    "I think we can do better."
+    <<Narrator>>
+    You nod, considering her hands, which have begun waving as she talks.
+    It's...
+        -> invigorating...
+            <<set $handCardOption2 to "Emperor">>
+            Invigorating. You're curious now. 
+            She seems to sense your change. 
+            Her eyes sharpen, her shoulder's straighten, and she smirks at you.
+            You smirk back.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+        -> almost cute...
+            <<set $handCardOption2 to "Death">>
+            almost cute, sad. Naive, that's the word.
+            She seems to feel it too, her hands stop waving and she puts them down.
+            <<Princess>>
+            but who knows. It's worked so far.
+            <<Narrator>>
+            She sighs.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+        -> intense...
+            <<set $handCardOption2 to "World">>
+            intense... ambitious. 
+            <<Narrator>>
+            Despite yourself you want to hear her theories on statecraft.
+            You think she might just change things
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+-> small...
+    <<set $handCardOption1 to "Death">>
+    small... like a gracefully failed heir.
+    <<Narrator>>
+    You draw a card from your deck. A {$handCardOption1} sits in your hand.
+    <<Narrator>>
+    You remember something that makes you shiver
+    <<Narrator>>
+    She got an advisor killed once.
+    <<Narrator>>
+    He refused to recognize her, favoring her brother over all else.
+    <<Narrator>>
+    Instead of complaining about it, she just listened, 
+    <<Narrator>>
+    noticing the way the man whispered pointedly in her brother's ear, their gazes trained on her.
+    <<Narrator>>
+    A conspiracy, no doubt. 
+    <<Narrator>>
+    One day she knocked on his door. No answer.
+    <<Narrator>>
+    She yelled for the guards to open the door for her,
+    <<Narrator>>
+    saying that she had been told to grab something from his quarters but the door was locked.
+    <<Narrator>>
+    hey opened the man's room and she rifled through his things... 
+    <<Narrator>>
+    and she procured correspondences with the Duke interloper.
+    <<Narrator>>
+    They dug deeper - a knife, poisons, a crest of the Duke's family. 
+    <<Narrator>>
+    She didn't realize he would die, you think.
+    <<Narrator>>
+    On the day of his execution, she hid in her room.
+    You think of it as...
+        ->A symptom of paranoia
+            <<set $handCardOption2 to "Devil">>
+            A symptom of her paranoia, but a sign of her reach.
+            worrisome...
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+        ->An act of authority
+            <<set $handCardOption1 to "Emperor">>
+            An act of authority. Necessary? Unsure.
+            But one nonetheless.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+        ->A pyrrhic victory
+            <<set $handCardOption1 to "Hermit">>
+            She didn't quite know the scope of her reach.
+            Now she does. She won't make that mistake again.
+            <<Narrator>>
+            You draw a card
+            <<Narrator>>
+            In your hand, a {$handCardOption1} card and a {$handCardOption2}.
+            -> It's time to pick one
+                <<jump HandCardPick>>
+===
+title: HeadCardPick
+position: 155,320
+---
+//do the command situation
+//set headCard to  the option chosen
+<<Narrator>>
+The cards sit heavy in your hand.
+<<Narrator>>
+Her behaviors, her considerations.
+<<Narrator>>
+Your decision here will mark the course of her life...
+<<Narrator>>
+Which cards does she need to see?
+->{$headCardOption1}?
+    <<set $headCard to $headCardOption1>>
+    <<Narrator>>
+    You push the {$headCard} forward.
+    <<Narrator>>
 
+->{$headCardOption2}?
+    <<set $headCard to $headCardOption2>>
+    <<Narrator>>
+    You push the {$headCard} forward.
+    <<Princess>>
+    "What does it-"
+    <<Narrator>>
+    You hold your hand up. 
+    <<Oracle>>
+    "Patience."
+    <<Oracle>>
+    -> I need to draw one more <<if $lookedAtHand == false>>
+        <<jump HandStart>>
+    -> I need to muse on this <<if $lookedAtHand == true>>
+        <<jump EnderStart>>
+===
+title: HandCardPick
+position: -116,322
+---
+<<Narrator>>
+The cards tell all. They look so beautiful in your hands.
+<<Narrator>>
+Which cards does she need to see?
+->{$handCardOption1}?
+    <<set $handCard to $handCardOption1>>
+    <<Narrator>>
+    You push the {$handCard} forward.
+    <<Narrator>>
+->{$handCardOption2}?
+    <<set $handCard to $handCardOption2>>
+    <<Narrator>>
+    You push the {$handCard} forward.
+    <<Princess>>
+    "What does it-"
+    <<Narrator>>
+    You hold your hand up. 
+    <<Oracle>>
+    "Patience."
+    <<Oracle>>
+    -> I need to draw one more <<if $lookedAtHead == false>>
+        <<jump HeadStart>>
+    -> I need to muse on this <<if $lookedAtHead == true>>
+        <<jump EnderStart>>
+===
+title: EnderStart
+position: 2,461
+---
+<<Narrator>>
+You smile at her.
+<<Narrator>>
+in front of you are a {$headCard} card and a {$handCard} card.
 ===

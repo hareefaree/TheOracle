@@ -10,12 +10,14 @@ public class DialogueController_V : DialogueViewBase
 {
     //built off of the yarn spinner Phone Chat Sample code
     DialogueRunner runner;
+    VariableManager_V variableManager;
     public GameObject messageModulePrefab;
 
     //messages
     public TMPro.TextMeshProUGUI messageText;
     public TMPro.TextMeshProUGUI characterNameText;
     public float lettersPerSecond = 10f;
+    public GameObject contentWindow;
 
     //character names
     //Serialize Field for Color of each speaker's name,
@@ -30,6 +32,9 @@ public class DialogueController_V : DialogueViewBase
     //audio
     //not relevant rn
 
+    //var management
+
+
     bool isFirstMessage = true;
 
     void Awake()
@@ -42,7 +47,7 @@ public class DialogueController_V : DialogueViewBase
         runner.AddCommandHandler("Princess", SetSenderPrincess);
         runner.AddCommandHandler("Oracle", SetSenderOracle);
         runner.AddCommandHandler("Narrator", SetSenderNarrator);
-        //runner.AddCommandHandler("TriggerCardView", TriggerCardView);
+        runner.AddCommandHandler("TriggerCardView", TriggerCardView);
 
         optionsContainer.SetActive(false);
     }
@@ -180,6 +185,9 @@ public class DialogueController_V : DialogueViewBase
     {
         //trigger the drag and drop screen here!
         Debug.Log("Triggering Card View");
+        //tell the tarottester thing to set active
     }
+
+    //Variable Management
 }
 
